@@ -7,10 +7,10 @@ public class StringWordFind {
         Scanner S = new Scanner(System.in);
         System.out.print("Enter the string you want to check:");
         str = S.nextLine();
-		//String[] splited = str.split("\\b+"); //split on word boundries
-		//Arrays.asList(splited).contains("brown"); //search array for word
+		String[] splited = str.split("\\b+");   //split on word boundries
+		Arrays.asList(splited).contains("brown");   //search array for word
 
-		if(str.contains("color"))
+		if(str.contains("red"))
 		{
 			System.out.println("color is Presnt in String");
 		}
